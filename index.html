@@ -8,6 +8,9 @@
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/Navigation-Clean.css">
     <link rel="stylesheet" href="assets/css/styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"></script>
+
     <script>
        function scrl(){
         var x=window.pageYOffset;
@@ -19,11 +22,14 @@
         
         }
         }
-     
+        $(window).load(function() {
+		$(".se-pre-con").fadeOut("slow");;
+	    }); 
     </script>
 </head>
 
 <body onscroll="scrl()">
+    <div class="se-pre-con" style="background: url('assets/img/pre1.gif') center no-repeat #fff;"></div>
     <nav id="nav11" class="navbar navbar-light navbar-expand-md navigation-clean" style="background-color:rgba(0,0,0,0);margin-left:60%;margin-top:10%;">
         <div class="container"><a class="navbar-brand" href="#"></a><button style="margin-left: 80%;" class="navbar-toggler" data-toggle="collapse" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
             <div class="collapse navbar-collapse aat"id="navcol-1">
@@ -61,14 +67,108 @@
             </ol>
         </div>
     </div>
-    <br><br><br><br>
-    <div id="alumni">
-    <a href="https://docs.google.com/forms/d/1Nkjq5NggTtP6yxhFX66AIi2w-Q9W35IofYLyr8GNTew/edit?chromeless=1" target="_blank"><h1 id="alumHead" class="btn-default" style="font-size:3vw;color:red;margin-left: 38%;"><mark> Alumni Registration</mark></h1></a>
-            
-            <br>
-            
-    </div>
-    <br><br><br>
+    
+
+
+<div class="alumni" style="background-image: url('assets/img/bg1.png')"><br><br><br><br>
+   <h1 id="alumHead" class="btn-default" style="font-size:3vw;color:red;margin-left: 38%;">Alumni Registration</h1>
+       <hr>     
+    <br><br>
+    <form>
+        <div class="row">
+            <div class="col-4"></div>
+            <div class="col-4">
+                    <div class="input-group">
+                    <div class="input-group-prepend">
+                            <div class="input-group-text">
+                              <i class="fa fa-graduation-cap"></i>
+                            </div>
+                          </div> 
+                          <input id="name" name="text1" placeholder="Name" type="text" class="form-control">
+            </div></div>
+            <div class="col-4"></div>
+        </div><br>
+        <div class="row">
+                <div class="col-4"></div>
+                <div class="col-4">
+                        <div class="input-group">
+                        <div class="input-group-prepend">
+                                <div class="input-group-text">
+                                  <i class="fa fa-address-card-o"></i>
+                                </div>
+                              </div> 
+                              <input id="rid" name="text1" placeholder="Registration id" type="text" class="form-control">
+                </div></div>
+                <div class="col-4"></div>
+            </div><br>
+            <div class="row">
+            <div class="col-4"></div>
+            <div class="col-4">
+                    <div class="input-group">
+                    <div class="input-group-prepend">
+                            <div class="input-group-text">
+                              <i class="fa fa-at"></i>
+                            </div>
+                          </div> 
+                          <input id="email" name="text1" placeholder="Email" type="text" class="form-control">
+            </div></div>
+            <div class="col-4"></div>
+        </div>
+        <br>
+            <div class="row">
+            <div class="col-4"></div>
+            <div class="col-4">
+                    <div class="input-group">
+                    <div class="input-group-prepend">
+                            <div class="input-group-text">
+                              <i class="fa fa-phone"></i>
+                            </div>
+                          </div> 
+                          <input id="mno" name="text1" placeholder="Mobile number" type="text" class="form-control">
+            </div></div>
+            <div class="col-4"></div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col-4"></div>
+            <div class="col-4">
+                    <div class="input-group">
+                    <div class="input-group-prepend">
+                            <div class="input-group-text">
+                              <i class="fa fa-adn"></i>
+                            </div>
+                          </div> 
+                          <input id="caddr" name="text1" placeholder="Current Address" type="text" class="form-control">
+                </div>
+            </div>
+            <div class="col-4"></div>
+        </div><br>
+        <div class="row">
+            <div class="col-4"></div>
+            <div class="col-4">
+                    <div class="input-group">
+                    <div class="input-group-prepend">
+                            <div class="input-group-text">
+                              <i class="fa fa-cogs"></i>
+                            </div>
+                          </div> 
+                          <input id="cwrk" name="text1" placeholder="Currently Working In" type="text" class="form-control">
+                </div>
+            </div>
+            <div class="col-4"></div>
+        </div>
+        <br>
+            <div class="row">
+            <div class="col-4"></div>
+            <div class="col-4">
+                <button name="submit" type="submit" class="btn btn-primary" style="margin-left: 44%;">Submit</button>
+            </div>
+            <div class="col-4"></div>
+        </div>
+    </form> 
+    <br><br><br>    
+</div>
+  
     <div id="contact">
             <section class="al-footer">
                     <div class="container">
