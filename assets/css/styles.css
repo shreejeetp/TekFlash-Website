@@ -1,9 +1,49 @@
+
 #invite {
   position:absolute;
 }
-
+.colorc{
+  -webkit-animation: color-change 1s infinite;
+  -moz-animation: color-change 1s infinite;
+  -o-animation: color-change 1s infinite;
+  -ms-animation: color-change 1s infinite;
+  animation: color-change 1s infinite;
+  animation-duration: 5s;
+}
 #scis_c {
+  
   position:absolute;
+}
+
+@-webkit-keyframes color-change {
+  0% { color: red; }
+  33%{ color: green;}
+  66% { color: yellow; }
+  100% { color: red; }
+}
+@-moz-keyframes color-change {
+  0% { color: red; }
+  33%{ color: green;}
+  66% { color: yellow; }
+  100% { color: red; }
+}
+@-ms-keyframes color-change {
+  0% { color: red; }
+  33%{ color: green;}
+  66% { color: yellow;}
+  100% { color: red; }
+}
+@-o-keyframes color-change {
+  0% { color: red; }
+  33%{ color: green;}
+  66% { color: yellow; }
+  100% { color: red; }
+}
+@keyframes color-change {
+  0% { color: red; }
+  33%{ color: green;}
+  66% { color: yellow; }
+  100% { color: red; }
 }
 
 #edate {
