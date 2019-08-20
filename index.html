@@ -8,13 +8,26 @@
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/Navigation-Clean.css">
     <link rel="stylesheet" href="assets/css/styles.css">
+    <script>
+$(document).ready(function(){
+    $(window).scroll(function(){
+        if($(document.body).scrollTop() < $(window).height()){
+            $(".aat").css({"background-color":"transparent"});   
+        }
+        else{
+            alert("asd");
+            $(".aat").css({"background-color":"white"});
+        }
+
+    })
+})
+    </script>
 </head>
 
 <body>
     <nav class="navbar navbar-light navbar-expand-md navigation-clean" style="background-color:rgba(0,0,0,0);margin-left:57%;width:none;height:10%;margin-top:10%;">
-        <div class="container"><a class="navbar-brand" href="#"></a><button class="navbar-toggler" data-toggle="collapse" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
-            <div class="collapse navbar-collapse"
-                id="navcol-1">
+        <div class="container"><a class="navbar-brand" href="#"></a><button style="margin-left: 80%;" class="navbar-toggler" data-toggle="collapse" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse aat"id="navcol-1">
                 <ul class="nav navbar-nav ml-auto">
                     <li class="nav-item" role="presentation"><a class="nav-link" href="#img1">Home</a></li>
                     <li class="nav-item" role="presentation"><a class="nav-link" href="#eventsDiv">Events</a></li>
@@ -25,12 +38,13 @@
         </div>
     </nav>
     <img src="assets/img/New Project.png" id="headerimg" style="width:100%;height:none;">
-    <h1 id="scis_c" style="font-size:600%;color:rgb(82,255,0);margin-top:17%;margin-left:21%;">SCIS CULTURAL DAY 2K19</h1>
-    <h1 id="invite" class="text-center" style="margin-top:15%;left:50%;color:rgb(255,255,255);font-size:25px;width:none;height:none;">We invite you to</h1>
-    <h1 id="edate" style="margin-top:25%;margin-left:46%;color:rgb(255,103,103);font-size:25px;">August 24th</h1>
-    <h1 id="eaddr" style="margin-top:45%;margin-left:35%;color:rgb(255,255,255);font-size:15px;">Savitribai phule Auditorium, University of Hyderabad, Gaachibowli, Hyderabad.</h1>
+    <h1 id="scis_c" style="font-size:5vw;color:rgb(82,255,0);margin-top:17%;margin-left:21%;">SCIS CULTURAL DAY 2K19</h1>
+    <h1 id="invite" class="text-center" style="margin-top:15%;left:44%;color:rgb(255,255,255);font-size:2vw;width:none;height:none;">We invite you to</h1>
+    <h1 id="edate" style="margin-top:25%;margin-left:46%;color:rgb(255,103,103);font-size:2vw;">August 25<sup>th</sup></h1>
+    <h1 id="eaddr" style="margin-top:45%;margin-left:33%;color:rgb(255,255,255);font-size:1vw;">Savitribai phule Auditorium, University of Hyderabad, Gaachibowli, Hyderabad.</h1>
     <div></div>
-    <img id="img1" src="assets/img/bs.png" style="width:100%;height:100%;">
+    <img id="img1" src="assets/img/bs.png" style="width:100%;height:100%;background-attachment: fixed;">
+    
     <div id="eventsDiv">
         <div class="carousel slide" data-ride="carousel" id="carousel-1" style="width:100%;height:none;">
             <div class="carousel-inner" role="listbox">
@@ -49,7 +63,7 @@
     </div>
     <br><br><br><br>
     <div id="alumni">
-            <h1 id="alumHead" style="font-size:300%;color:rgb(0,0,0);margin-left: 40%;">Alumni Registration</h1>
+            <h1 id="alumHead" style="font-size:3vw;color:rgb(0,0,0);margin-left: 38%;">Alumni Registration</h1>
             <hr>
             <br>
             <form>
@@ -122,111 +136,51 @@
                     <div class="container">
                         <div class="row al-footer-head">
                             <div class="col-4">
-                                <h1 class="footer-logo rounded d-inline-block text-uppercase py-1 px-3 m-0">Logo</h1>
+                               <img src="assets/img/logo.png" style="width: 50%">
                             </div>
                             <div class="col-8">
                                 <div class="al-footer-social">
                                     <ul class="nav justify-content-end">
                                         <li class="nav-item"><a href="#" class="nav-link"><i class="fab fa-facebook-square"></i></a></li>
                                         <li class="nav-item"><a href="#" class="nav-link"><i class="fab fa-instagram"></i></a></li>
-                                        <li class="nav-item"><a href="#" class="nav-link"><i class="fab fa-youtube-square"></i></a></li>
+                                        <li class="nav-item"><a href="#" class="nav-link"><i class="fab fa-youtube"></i></a></li>
                                         <li class="nav-item"><a href="#" class="nav-link"><i class="fab fa-twitter-square"></i></a></li>
                                     </ul>
                                 </div>
                             </div>
                         </div>
                         <div class="row">
-                            <div class="col-md-6 col-lg-4">
-                                <div class="al-footer-col">
-                                    <h3 class="al-footer-title mb-3">About</h3>
-                                    <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam rhoncus enim accumsan, pellentesque ex vitae, lobortis lorem. Cras et suscipit mauris. Aliquam ultrices diam ullamcorper dui tempus laoreet. </p>
-                                    <h3 class="al-footer-title mb-3">Contact</h3>
-                                    <p><i class="fas fa-home mr-2"></i> 738 Rockwell Lane, Kinston, NC, North Carolina, 128501</p>
-                                    <p><i class="fas fa-phone mr-2"></i> +1-324-123-0000 </p>
-                                    <p class="mb-0"><i class="far fa-envelope mr-2"></i> hi@frontfolks.com </p>
-                
-                                </div>
+                            <div class="col-6">
+                                    <div class="al-footer-col">
+                                        <h3 class="al-footer-title mb-3">About</h3>
+                                    <p class="mb-0">SCIS cultural event description</p></div>
+                                   
                             </div>
-                            <div class="col-md-3 col-lg-2">
-                                <div class="al-footer-col">
-                                    <h3 class="al-footer-title mb-3">Services</h3>
-                                    <ul class="list-unstyled al-links mb-0">
-                                        <li><a href="#">Branding</a></li>
-                                        <li><a href="#">UI/UX</a></li>
-                                        <li><a href="#">SEO/SMM</a></li>
-                                        <li><a href="#">App Dev</a></li>
-                                        <li><a href="#">Websites</a></li>
-                                        <li><a href="#">Marketing</a></li>
-                                        <li><a href="#">Testing</a></li>
-                                        <li><a href="#">Consulting</a></li>
-                
-                                    </ul>
-                                </div>
+                            
+                            <div class="col-6" style="text-align: right;">
+                                    <div class="al-footer-col">
+                                            <h3 class="al-footer-title mb-3">Contact</h3>
+                                            <p><i class="fas fa-home mr-2"></i> SCIS Dept., University of hyderabad</p>
+                                            <p><i class="fas fa-phone mr-2"></i> +1-324-123-0000 </p>
+                                            <p class="mb-0"><i class="far fa-envelope mr-2"></i> hi@frontfolks.com </p>
+                        
+                                        </div>
                             </div>
-                            <div class="col-md-3 col-lg-2">
-                                <div class="al-footer-col">
-                                    <h3 class="al-footer-title mb-3">Company</h3>
-                                    <ul class="list-unstyled al-links mb-0">
-                                        <li><a href="#">About</a></li>
-                                        <li><a href="#">Leadership</a></li>
-                                        <li><a href="#">Mission</a></li>
-                                        <li><a href="#">Vision</a></li>
-                
-                
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="col-md-6 col-lg-2">
-                                <div class="al-footer-col">
-                                    <h3 class="al-footer-title mb-3">Tech Stack</h3>
-                                    <ul class="list-unstyled al-links mb-0">
-                                        <li><a href="#">Angular</a></li>
-                                        <li><a href="#">React </a></li>
-                                        <li><a href="#">Vue.js</a></li>
-                                        <li><a href="#">Python</a></li>
-                                        <li><a href="#">Ruby on Rails</a></li>
-                                        <li><a href="#">Laravel</a></li>
-                                        <li><a href="#">Wordpress</a></li>
-                                        <li><a href="#">PHP</a></li>
-                                        <li><a href="#">Shopify</a></li>
-                                        <li><a href="#">Magento</a></li>
-                                        <li><a href="#">JavaScript</a></li>
-                                        <li><a href="#">Swift</a></li>
-                
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="col-md-6 col-lg-2">
-                                <div class="al-footer-col">
-                                    <h3 class="al-footer-title mb-3">More</h3>
-                                    <ul class="list-unstyled al-links mb-0">
-                                        <li><a href="#">Contact</a></li>
-                                        <li><a href="#">Support</a></li>
-                                        <li><a href="#">Faqs</a></li>
-                                        <li><a href="#">Blog</a></li>
-                                        <li><a href="#">Stories</a></li>
-                
-                                    </ul>
-                                </div>
-                            </div>
+                            
                         </div>
                         <div class="row al-footer-copy">
                             <div class="col-sm-12 col-md-6 justify-content-center align-self-center">
-                                <p class="mb-0">2018 &copy; <a href="#">Frontfolks</a></p>
+                                <p class="mb-0">2019 &copy; <a href="#">TekSplash</a></p>
                             </div>
                             <div class="col-sm-12 col-md-6">
-                                <div class="al-footer-copy-nav">
-                                    <ul class="nav justify-content-end">
-                                        <li class="nav-item"><a href="#" class="nav-link al-footer-fb">About</a></li>
-                                        <li class="nav-item"><a href="#" class="nav-link al-footer-ig">Shop</a></li>
-                                        <li class="nav-item"><a href="#" class="nav-link al-footer-yt">Contact</a></li>
-                                    </ul>
-                                </div>
+                                
                             </div>
                         </div>
                     </div>
                 </section>
     </div>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,600,700,900" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous"> 
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
